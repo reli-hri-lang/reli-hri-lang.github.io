@@ -1,0 +1,141 @@
+Language Name,Language Family,ISO 639-1 Code,Language Family Sub-branch,Resources,UNESCO Endangerment,Number of Speakers,Continent,Primary Countries,Script
+English,Indo-European,en,West Germanic,High,,~1.5B,Global,"United Kingdom, United States, Canada, Australia, New Zealand, Ireland",Latin
+Spanish,Indo-European,es,Romance,High,,~543M,Global,"Spain, Equatorial Guinea, Argentina, Bolivia, Chile, Colombia, Costa Rica, Cuba, Dominican Republic, Ecuador, El Salvador, Guatemala, Honduras, Mexico, Nicaragua, Panama, Paraguay, Peru, Uruguay, Venezuela",Latin
+French,Indo-European,fr,Romance,High,,~280M,Global,"France, Canada, Belgium, Switzerland, Luxembourg, Monaco, Benin, Burkina Faso, Burundi, Cameroon, Central African Republic, Chad, Comoros, Congo (DRC), Congo (Republic), Djibouti, Gabon, Guinea, Ivory Coast, Madagascar, Mali, Niger, Senegal, Togo",Latin
+German,Indo-European,de,West Germanic,High,,~135M,Europe,"Germany, Austria, Switzerland, Liechtenstein",Latin
+Portuguese,Indo-European,pt,Romance,High,,~260M,Global,"Portugal, Brazil, Angola, Mozambique, Cape Verde, Guinea-Bissau, Equatorial Guinea, São Tomé and Príncipe, East Timor",Latin
+Italian,Indo-European,it,Romance,High,,~64M,Europe,"Italy, Switzerland",Latin
+Russian,Indo-European,ru,East Slavic,High,,~258M,Europe/Asia,"Russia, Belarus, Kazakhstan, Kyrgyzstan",Cyrillic
+Ukrainian,Indo-European,uk,East Slavic,High,,~32M,Europe,Ukraine,Cyrillic
+Belarusian,Indo-European,be,East Slavic,Low,,~7.6M,Europe,Belarus,Cyrillic
+Polish,Indo-European,pl,West Slavic,High,,~50M,Europe,Poland,Latin
+Czech,Indo-European,cs,West Slavic,High,,~10.7M,Europe,Czech Republic,Latin
+Slovak,Indo-European,sk,West Slavic,High,,~5.2M,Europe,Slovakia,Latin
+Bulgarian,Indo-European,bg,South Slavic,High,,~7M,Europe,Bulgaria,Cyrillic
+Serbian,Indo-European,sr,South Slavic,Low,,~8.2M,Europe,Serbia,"Cyrillic, Latin"
+Croatian,Indo-European,hr,South Slavic,High,,~5.6M,Europe,Croatia,Latin
+Bosnian,Indo-European,bs,South Slavic,High,,~2.5M,Europe,Bosnia and Herzegovina,"Latin, Cyrillic"
+Macedonian,Indo-European,mk,South Slavic,High,,~2M,Europe,North Macedonia,Cyrillic
+Slovenian,Indo-European,sl,South Slavic,High,,~2.5M,Europe,Slovenia,Latin
+Hungarian,Uralic,hu,Ugric,High,,~13M,Europe,Hungary,Latin
+Romanian,Indo-European,ro,Romance,High,,~24M,Europe,"Romania, Moldova",Latin
+Greek,Indo-European,el,Hellenic,High,,~13.4M,Europe,"Greece, Cyprus",Greek
+Dutch,Indo-European,nl,West Germanic,High,,~22M,Europe,"Netherlands, Belgium, Suriname",Latin
+Afrikaans,Indo-European,af,West Germanic,High,,~17M,Africa,"South Africa, Namibia",Latin
+Swedish,Indo-European,sv,North Germanic,High,,~10M,Europe,"Sweden, Finland",Latin
+Norwegian,Indo-European,no,North Germanic,Low,,~5.3M,Europe,Norway,Latin
+Danish,Indo-European,da,North Germanic,High,,~5.6M,Europe,"Denmark, Greenland, Faroe Islands",Latin
+Icelandic,Indo-European,is,North Germanic,High,,~314K,Europe,Iceland,Latin
+Faroese,Indo-European,fo,North Germanic,Low,,~72K,Europe,Faroe Islands (Denmark),Latin
+Irish,Indo-European,ga,Celtic,Low,,~1.2M,Europe,Ireland,Latin
+Scottish Gaelic,Indo-European,gd,Celtic,Low,,~60K,Europe,Scotland,Latin
+Welsh,Indo-European,cy,Celtic,Low,,~884K,Europe,Wales (UK),Latin
+Breton,Indo-European,br,Celtic,Vulnerable,Severely Endangered,~200K,Europe,Brittany (France),Latin
+Cornish,Indo-European,kw,Celtic,Vulnerable,Critically Endangered,<1K,Europe,Cornwall (UK),Latin
+Manx,Indo-European,gv,Celtic,Vulnerable,Critically Endangered,<2K,Europe,Isle of Man (UK),Latin
+Latin,Indo-European,la,Italic,,Extinct,N/A (historical),Europe,Ancient Rome (historical),Latin
+Catalan,Indo-European,ca,Romance,High,,~4.1M,Europe,"Andorra, Spain (Catalonia, Balearic Islands)",Latin
+Galician,Indo-European,gl,Romance,Low,,~2.4M,Europe,Spain (Galicia),Latin
+Aragonese,Indo-European,an,Romance,Vulnerable,Definitely Endangered,~25K,Europe,Spain (Aragon),Latin
+Sardinian,Indo-European,sc,Romance,Low,,~1.2M,Europe,Italy (Sardinia),Latin
+Ladin,Indo-European,n/a,Romance,Vulnerable,Definitely Endangered,~30K,Europe,Italy (Dolomites),Latin
+Friulian,Indo-European,n/a,Romance,Low,,~600K,Europe,Italy (Friuli),Latin
+Lombard,Indo-European,n/a,Romance,Low,,~3.5M,Europe,Italy (Lombardy),Latin
+Neapolitan,Indo-European,n/a,Romance,Vulnerable,Definitely Endangered,~5.7M,Europe,Italy (Campania),Latin
+Sicilian,Indo-European,n/a,Romance,Low,,~4.7M,Europe,Italy (Sicily),Latin
+Venetian,Indo-European,n/a,Romance,Low,,~4M,Europe,Italy (Veneto),Latin
+Romansh,Indo-European,rm,Romance,Vulnerable,Vulnerable,~60K,Europe,Switzerland,Latin
+Kurdish,Indo-European,ku,Iranian,Low,,~15M,Asia,"Turkey, Syria, Iraq, Iran",Latin/Arabic
+Persian,Indo-European,fa,Iranian,High,,~80M,Asia,"Iran, Afghanistan, Tajikistan",Arabic-based
+Tajik,Indo-European,tg,Iranian,Low,,~8.9M,Asia,Tajikistan,Cyrillic
+Pashto,Indo-European,ps,Eastern Iranian,Low,,~38M,Asia,"Afghanistan, Pakistan",Arabic-based
+Ossetian,Indo-European,os,Iranian,Vulnerable,Vulnerable,~600K,Europe/Asia,"Russia (North Ossetia), Georgia (South Ossetia)",Cyrillic
+Armenian,Indo-European,hy,Armenian,Low,,~6.7M,Asia,Armenia,Armenian
+Albanian,Indo-European,sq,Albanian,High,,~7.5M,Europe,"Albania, Kosovo",Latin
+Lithuanian,Indo-European,lt,Baltic,High,,~3M,Europe,Lithuania,Latin
+Latvian,Indo-European,lv,Baltic,High,,~1.75M,Europe,Latvia,Latin
+Estonian,Uralic,et,Finnic,High,,~1.1M,Europe,Estonia,Latin
+Finnish,Uralic,fi,Finnic,High,,~5.4M,Europe,Finland,Latin
+Kazakh,Turkic,kk,Kipchak,High,,~13M,Asia,Kazakhstan,Cyrillic (Latin in transition)
+Kyrgyz,Turkic,ky,Kipchak,Low,,~5.1M,Asia,Kyrgyzstan,Cyrillic
+Uzbek,Turkic,uz,Karluk,High,,~27M,Asia,Uzbekistan,Latin/Cyrillic
+Uyghur,Turkic,ug,Karluk,Low,,~10M,Asia,China (Xinjiang),Arabic-based
+Turkish,Turkic,tr,Oghuz,High,,~84M,Asia/Europe,Turkey,Latin
+Azerbaijani,Turkic,az,Oghuz,Low,,~23M,Asia,"Azerbaijan, Iran","Latin (Cyrillic, Arabic historically)"
+Turkmen,Turkic,tk,Oghuz,Low,,~7.6M,Asia,Turkmenistan,Latin/Cyrillic
+Tatar,Turkic,tt,Kipchak,Low,,~5.2M,Europe/Asia,Russia (Tatarstan),Cyrillic
+Chuvash,Turkic,cv,Oghur,Vulnerable,Vulnerable,~1.1M,Europe,Russia (Chuvashia),Cyrillic
+Mongolian,Mongolic,mn,Mongolic,Low,,~5.2M,Asia,Mongolia,Cyrillic (Traditional script)
+Buryat,Mongolic,n/a,Mongolic,Vulnerable,Vulnerable,~500K,Asia,"Russia (Buryatia), Mongolia, China",Cyrillic
+Japanese,Japonic,ja,Japanese,High,,~125M,Asia,Japan,Kanji + Kana
+Okinawan,Japonic,n/a,Japonic,Vulnerable,Definitely Endangered,~900K,Asia,Japan (Okinawa),Kana (historically)
+Korean,Koreanic,ko,Koreanic,High,,~80M,Asia,"North Korea, South Korea",Hangul
+Chinese,Sino-Tibetan,zh,Sinitic,High,,~920M,Asia,"China, Taiwan, Singapore",Han characters
+Tibetan,Sino-Tibetan,bo,Tibetic,Low,,~6M,Asia,"China (Tibet), India (Ladakh), Nepal",Tibetan script
+Burmese,Sino-Tibetan,my,Lolo-Burmese,Low,,~33M,Asia,Myanmar,Burmese script
+Thai,Kra-Dai,th,Tai,High,,~21M,Asia,Thailand,Thai script
+Lao,Kra-Dai,lo,Tai,Low,,~7.4M,Asia,Laos,Lao script
+Khmer,Austroasiatic,km,Khmer,Low,,~17M,Asia,Cambodia,Khmer script
+Vietnamese,Austroasiatic,vi,Vietic,High,,~76M,Asia,Vietnam,Latin (Quốc Ngữ)
+Hmong,Hmong–Mien,n/a,Hmongic,Vulnerable,Vulnerable,~3.7M,Asia,"China, Southeast Asia diaspora",Latin/Pollard
+Mien,Hmong–Mien,n/a,Mienic,Vulnerable,Definitely Endangered,~2M,Asia,"China, Vietnam, Laos",Latin/Chinese-based
+Filipino,Austronesian,tl,Central Philippine,High,,~28M,Asia,Philippines,Latin (Baybayin historically)
+Indonesian,Austronesian,id,Malayic,High,,~43M (L1),Asia,Indonesia,Latin
+Malay,Austronesian,ms,Malayo-Polynesian,High,,~290M,Asia,"Malaysia, Brunei, Indonesia, Singapore",Latin (Jawi historically)
+Javanese,Austronesian,jv,Javanic,Low,,~68M,Asia,Indonesia (Java),Latin (Javanese historically)
+Sundanese,Austronesian,su,Sundic,Low,,~42M,Asia,Indonesia (West Java),Latin (Sundanese historically)
+Malagasy,Austronesian,mg,Malayo-Polynesian,Low,,~25M,Africa,Madagascar,Latin
+Maori,Austronesian,mi,Polynesian,Low,,~50K,Oceania,New Zealand,Latin
+Samoan,Austronesian,sm,Polynesian,Low,,~470K,Oceania,Samoa,Latin
+Tongan,Austronesian,to,Polynesian,Low,,~187K,Oceania,Tonga,Latin
+Hawaiian,Austronesian,haw,Polynesian,Vulnerable,Critically Endangered,<2K,Oceania,United States (Hawaii),Latin
+Fijian,Austronesian,fj,Oceanic,Low,,~450K,Oceania,Fiji,Latin
+Marshallese,Austronesian,mh,Oceanic,Low,,~59K,Oceania,Marshall Islands,Latin
+Chuukese,Austronesian,chk,Micronesian,Vulnerable,Vulnerable,~48K,Oceania,Federated States of Micronesia,Latin
+Carolinian,Austronesian,cal,Micronesian,Vulnerable,Definitely Endangered,~5K,Oceania,Northern Mariana Islands,Latin
+Palauan,Austronesian,pau,Western Malayo-Polynesian,Vulnerable,Vulnerable,~17K,Oceania,Palau,Latin
+Chamorro,Austronesian,ch,Western Malayo-Polynesian,Low,,~58K,Oceania,"Guam, Northern Mariana Islands",Latin
+Bislama,Creole,bi,English-based Creole,Vulnerable,Vulnerable,~10K,Oceania,Vanuatu,Latin
+Hiri Motu,Austronesian,n/a,Central Papuan,Vulnerable,Vulnerable,~120K,Oceania,Papua New Guinea,Latin
+Pohnpeian,Austronesian,n/a,Micronesian,Vulnerable,Vulnerable,~29K,Oceania,Federated States of Micronesia,Latin
+Arabic,Afro-Asiatic,ar,Semitic,High,,~310M,Africa/Asia,"Egypt, Libya, Tunisia, Algeria, Morocco, Sudan, Mauritania, Saudi Arabia, Iraq, Syria, Jordan, Lebanon, Palestine, Kuwait, Bahrain, Qatar, United Arab Emirates, Oman, Yemen",Arabic
+Amharic,Afro-Asiatic,am,Semitic,Low,,~22M,Africa,Ethiopia,Ge'ez (Ethiopic)
+Tigrinya,Afro-Asiatic,ti,Semitic,Low,,~9M,Africa,"Eritrea, Ethiopia",Ge'ez (Ethiopic)
+Hebrew,Afro-Asiatic,he,Semitic,High,,~9M,Asia,Israel,Hebrew
+Aramaic,Afro-Asiatic,n/a,Semitic,Vulnerable,Definitely Endangered,~1M,Asia,Middle East diaspora,Syriac/Aramaic
+Syriac,Afro-Asiatic,n/a,Semitic,Vulnerable,Definitely Endangered,~1M,Asia,Middle East diaspora,Syriac
+Phoenician,Afro-Asiatic,n/a,Semitic,,Extinct,N/A (extinct),Asia,Ancient Levant,Phoenician (historical)
+Hausa,Afro-Asiatic,ha,Chadic,Low,,~54M,Africa,"Nigeria, Niger",Latin (Ajami)
+Somali,Afro-Asiatic,so,Cushitic,Low,,~17M,Africa,"Somalia, Ethiopia, Kenya",Latin (Osmanya historically)
+Oromo,Afro-Asiatic,om,Cushitic,Low,,~36M,Africa,"Ethiopia, Kenya",Latin
+Wolof,Niger-Congo,wo,Senegambian,Low,,~5M,Africa,"Senegal, Gambia",Latin (Ajami historically)
+Swahili,Niger-Congo,sw,Bantu,High,,~16M (L1),Africa,"Tanzania, Kenya, Uganda, DR Congo",Latin
+Zulu,Niger-Congo,zu,Bantu,High,,~12M,Africa,South Africa,Latin
+Xhosa,Niger-Congo,xh,Bantu,High,,~8.2M,Africa,South Africa,Latin
+Shona,Niger-Congo,sn,Bantu,Low,,~7M,Africa,Zimbabwe,Latin
+Lingala,Niger-Congo,ln,Bantu,Low,,~10M,Africa,"DR Congo, Republic of Congo",Latin
+Kikuyu,Niger-Congo,ki,Bantu,Low,,~7M,Africa,Kenya,Latin
+Sesotho,Niger-Congo,st,Sotho–Tswana,High,,~5.6M,Africa,"Lesotho, South Africa",Latin
+Tswana,Niger-Congo,tn,Sotho–Tswana,High,,~5M,Africa,"Botswana, South Africa",Latin
+Tsonga,Niger-Congo,ts,Tswa–Ronga,Low,,~3M,Africa,"South Africa, Mozambique",Latin
+Yoruba,Niger-Congo,yo,Defoid,Low,,~28M,Africa,"Nigeria, Benin",Latin
+Igbo,Niger-Congo,ig,Volta–Niger,Low,,~27M,Africa,Nigeria,Latin
+Ewe,Niger-Congo,ee,Gbe,Low,,~5M,Africa,"Ghana, Togo",Latin
+Twi,Niger-Congo,tw,Akan,Low,,~7M,Africa,Ghana,Latin
+Akan,Niger-Congo,ak,Akan,Low,,~10M,Africa,Ghana,Latin
+Ndebele,Niger-Congo,nr,Bantu,Low,,~1.1M,Africa,South Africa,Latin
+Chewa,Niger-Congo,ny,Bantu,Low,,~12M,Africa,"Malawi, Zambia, Mozambique",Latin
+Kinyarwanda,Niger-Congo,rw,Bantu,Low,,~10M,Africa,Rwanda,Latin
+Haitian Creole,Creole,ht,French-based Creole,Low,,~10M,North America,Haiti,Latin
+Hindi,Indo-European,hi,Indo-Aryan,High,,~600M,Asia,"India, Fiji",Devanagari
+Tamil,Dravidian,ta,Southern Dravidian,Low,,~80M,Asia,"India, Sri Lanka",Tamil
+Bengali,Indo-European,bn,Indo-Aryan,High,,~270M,Asia,"Bangladesh, India",Bengali
+Dzongkha,Sino-Tibetan,dz,Tibeto-Burman,Low,,~600K,Asia,Bhutan,Tibetan
+Corsican,Indo-European,co,Romance,Low,,~250K,Europe,France,Latin
+Quechua,Quechuan,qu,Quechuan,Low,,~8M,South America,"Peru, Bolivia",Latin
+Maltese,Afro-Asiatic,mt,Semitic,High,,~520K,Europe,Malta,Latin
+Nigerian Pidgin,Creole,n/a,English-based,Low,,~5M,Africa,"Nigeria, Ghana",Latin
+Cherokee,Iroquoian,chr,Southern Iroquoian,Vulnerable,Severely Endangered,~22K,North America,USA,Cherokee
+Tok Pisin,Creole,tpi,English-based,Low,,~4M,Oceania,Papua New Guinea,Latin
+Mapudungun,Araucanian,n/a,Mapuche,Vulnerable,Vulnerable,~260K,South America,"Chile, Argentina",Latin
+Bambara,Niger-Congo,bm,Mande,Low,,~14M,Africa,"Mali, Burkina Faso",Latin

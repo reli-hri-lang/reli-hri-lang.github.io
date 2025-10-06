@@ -1,0 +1,1717 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DESCRIPTION META TAG">
+  <meta property="og:title" content="SOCIAL MEDIA TITLE TAG" />
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG" />
+  <meta property="og:url" content="URL OF THE WEBSITE" />
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/your_banner_image.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+
+
+  <meta name="twitter:title" content="TWITTER BANNER TITLE META TAG">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>From Any Language to Robot Action: A Language-Agnostic Approach to Human-Agent Interaction</title>
+  <link rel="icon" type="image/x-icon" href="static/images/favicon.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+
+  <title>Typing Carousel</title>
+  <title>Typing Carousel with Arrows</title>
+  <style>
+  /* minimal styles just for this video carousel */
+  #results-carousel-videos { position: relative; max-width: 1400px; margin: 0 auto; }
+  #results-carousel-videos .rl-slide { display: none; gap: 6px; align-items: stretch; }
+  #results-carousel-videos .rl-slide.active { display: flex; }
+  #results-carousel-videos video { width: 100%; height: 100%; object-fit: fill; display: block; border-radius: 3px; }
+
+  #results-carousel-videos .nav {
+    position: absolute; top: 50%; transform: translateY(-50%);
+    width: 40px; height: 40px; border-radius: 50%; border: 0;
+    background: #fff; box-shadow: 0 2px 6px rgba(0,0,0,.2);
+    font-weight: 700; cursor: pointer; z-index: 10;
+  }
+  #results-carousel-videos .prev { left: -18px; }
+  #results-carousel-videos .next { right: -18px; }
+</style>
+
+  <style>
+    .carousel-container {
+      max-width: 960px;
+      margin: 2rem auto;
+      position: relative;
+    }
+
+    .carousel-slide {
+      display: none;
+      flex-wrap: nowrap;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .carousel-slide.active {
+      display: flex;
+    }
+
+    .image-wrapper {
+      position: relative;
+      flex: 1;
+    }
+
+    .image-wrapper img {
+      width: 100%;
+      display: block;
+    }
+
+    .typing-text {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      color: white;
+      font-size: 1.5rem;
+      font-family: monospace;
+      white-space: pre;
+    }
+
+    .video-wrapper {
+      flex: 1;
+    }
+
+    .carousel-arrow {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: white;
+      color: black;
+      font-size: 18px;
+      /* Slightly smaller */
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      cursor: pointer;
+      z-index: 10;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      padding-left: -1px;
+      /* ← adjust this if off-centered */
+    }
+
+    .carousel-arrow.left {
+      left: -18px;
+      top: 50%;
+    }
+
+    .carousel-arrow.right {
+      right: -18px;
+      top: 50%;
+    }
+    .arrow:hover {
+      background: rgba(0, 0, 0, 0.8);
+    }
+
+  .wide-wrap {
+    max-width: clamp(1200px, 120vw, 1400px); /* min, preferred, max */
+    margin: 0 auto;
+    padding: 0 12px; /* gutter */
+  }
+
+</style>
+</head>
+
+<body>
+
+
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="title is-1 publication-title">From Any Language to Robot Action: A Language-Agnostic Approach to Human-Agent Interaction</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block">
+                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">Anonymous</a></span>
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                  </a>
+                </span>
+
+                <!-- Supplementary PDF link -->
+                <span class="link-block">
+                  <a href="static/pdfs/supplementary_material.pdf" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Supplementary</span>
+                  </a>
+                </span>
+
+                <!-- Github link -->
+                <span class="link-block">
+                  <a href="https://github.com/YOUR REPO HERE" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="fab fa-github"></i>
+                    </span>
+                    <span>Code</span>
+                  </a>
+                </span>
+
+                <!-- ArXiv abstract Link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
+                    class="external-link button is-normal is-rounded is-dark">
+                    <span class="icon">
+                      <i class="ai ai-arxiv"></i>
+                    </span>
+                    <span>arXiv</span>
+                  </a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Teaser video-->
+  <section class="hero teaser">
+    <div class="container is-max-desktop">
+      <div class="hero-body">
+        <video poster="" id="tree" autoplay controls muted loop height="100%">
+          <!-- Your video here -->
+          <source src="static/videos/rtvlem_audio.mp4" type="video/mp4">
+        </video>
+        <h2 class="subtitle has-text-centered">
+          This work introduces ReLI, a language-agnostic framework, that transforms natural human instructions into robot-executable actions, enabling seamless multilingual human-robot interaction. 
+          By grounding large-scale models into language-to-action systems, it supports natural conversation, semantic reasoning, and robust task execution in both simulated and real-world environments.
+        </h2>
+      </div>
+    </div>
+  </section>
+  <!-- End teaser video -->
+
+  <section class="hero is-small">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+
+        <div class="column">
+          <model-viewer
+            src="static/models/map_1753172611340.glb"
+            style="width: 600px; height: 600px;"
+            auto-rotate camera-controls
+          />
+        </div>
+
+        <div class="column">
+          <model-viewer
+            src="static/models/sim_1753172584156_first_aid_kit.glb"
+            style="width: 600px; height: 600px; background-color: #404040" auto-rotate camera-controls
+          />
+          <span
+            style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; border: 2px solid black; box-shadow: 0 0 2px rgba(0,0,0,0.2);">
+            Query:
+            <span style="color: red;">first aid kit</span>
+          </span>
+        </div>
+
+        <div class="column">
+          <model-viewer
+            src="static/models/sim_1753172601770_floor.glb"
+            style="width: 600px; height: 600px; background-color: #404040"
+            auto-rotate camera-controls
+          />
+          <span
+            style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; border: 2px solid black; box-shadow: 0 0 2px rgba(0,0,0,0.2);">
+            Query:
+            <span style="color: red;">floor</span>
+          </span>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Paper abstract -->
+  <section class="section hero is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <h2 class="title is-3">Abstract</h2>
+          <div class="content has-text-justified">
+            <p>
+          We introduce ReLI, a language-agnostic framework that enables autonomous agents to converse naturally, semantically reason about their environment, and execute downstream tasks regardless of the language of human instructions. 
+          Unlike existing approaches that are constrained to high-resource languages or complex teleoperation interfaces, ReLI leverages large-scale pre-trained foundation models and grounds them into language-to-action models capable of abstracting free-form human commands into actionable plans. 
+          To ensure inclusivity, ReLI performs cross-lingual grounding to generalise across 140 languages, including low-resource, endangered, and vernacular languages such as African Pidgin and Cherokee. 
+          Through extensive simulated and real-world evaluations on short- and long-horizon tasks such as spatial navigation, scene information retrieval, and query-oriented problem solving, ReLI demonstrates robustness in both zero-shot and few-shot scenarios. 
+          We report results from more than 70K multi-turn conversations showing an average of 90 percent ±0.2 accuracy in instruction parsing and task execution, highlighting the framework’s ability to preserve linguistic diversity while maintaining high success rates. By advancing natural, multilingual, and accessible human-robot interaction, ReLI represents the first scalable and inclusive solution for real-world autonomous agents capable of universal language-conditioned collaboration.        </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display: flex; justify-content: center; width: 100%; margin: 20px 0;">
+      <video poster="banner" id="tree" autoplay controls muted loop
+        style="width: 45%; height: auto; border-radius: 10px; box-shadow: 0 4px 12px rgba(0,0,0,0.2);">
+        <source src="static/videos/rtvlem_slides_audio.mp4" type="video/mp4">
+      </video>
+    </div>
+  </section>
+  <!-- End paper abstract -->
+
+  <section class="hero is-small">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <br><br>
+          <h2 class="title is-3">Experimental Setup</h2>
+          <div class="content has-text-justified">
+            <p>
+              Experiments were carried out in both simulated and real-world settings using a wheeled differential drive robot and a Unitree Go1 quadruped, each equipped with RGB-D and LiDAR sensors.
+              Simulation experiments were performed in a multi-room office-like environment, while real-world trials were conducted in laboratory with typical furnishings. 
+              Vocal instructions were processed using inbuilt microphones, and different LLMs, including LLaMA 3.2 and OpenAI's GPT-4o and GPT-4o-mini, were tested, with GPT-4o providing the most reliable performance and thus used for final results.
+            </p>
+            <!-- <div style="display: flex; gap: 10px; justify-content: center; align-items: center;">
+              <img src="static/images/handheld.jpg" alt="Handheld setup" style="width: 30%; height: auto;">
+              <img src="static/images/franka_wrist.png" alt="Wrist-mounted on robot arm"
+                style="width: 53.25%; height: auto;">
+              <img src="static/images/mobile_base.png" alt="Mounted on mobile base"
+                style="width: 31.25%; height: auto;">
+            </div> -->
+            <!-- <p class="has-text-justified" style="hyphens: auto; overflow-wrap: break-word; word-break: break-word;">
+              <br>
+              Add real images of the setups here.
+            </p> -->
+            <div style="display: flex; justify-content: center; overflow: visible;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <br><br>
+          <h3 class="title is-4">Language Diversity</h3>
+          <p class="has-text-justified" style="hyphens: auto; overflow-wrap: break-word; word-break: break-word;">
+            To evaluate ReLI's multilingual generalisation, we conducted large-scale experiments across 140 representative languages selected from the <a href="https://www.iso.org/iso-639-language-code" target="_blank">ISO 639</a> catalogue and distributed across all continents. 
+            The languages were grouped by resource availability, with high-resource languages characterised by strong digital presence and large-scale corpora, 
+            low-resource languages defined by limited data and weaker institutional support, and vulnerable languages encompassing creoles, vernaculars, and endangered dialects that remain partially decodable by large language models. 
+            The evaluation covered diverse language families including Indo-European, Afro-Asiatic, Austro-Asiatic, Sino-Tibetan, and Niger-Congo, ensuring that both globally dominant and digitally scarce languages were represented in assessing ReLI's ability to ground linguistic diversity into real-world robotic affordances.
+          </p>
+        </div>
+      </div>
+      
+      <section id="lang-dash" aria-label="Endangered languages dashboard">
+        <div class="ld-grid">
+          <div id="ld-map"    class="ld-card"></div>
+          <div id="ld-fams"   class="ld-card"></div>
+          <div id="ld-top" class="ld-card"></div>
+        </div>
+      </section>
+
+      <!-- <p class="has-text-justified" style="hyphens: auto; overflow-wrap: break-word; word-break: break-word;">
+        <br>
+        A few images of these queries (side-by-side)
+      </p> -->
+    </div>
+
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <br><br>
+          <h3 class="title is-4">Task Diversity</h3>
+          <p>
+           To capture the full complexity of multilingual human-robot interaction, we designed a benchmark of task instructions that test ReLI's 
+            abilities in parsing, environment-based decision making, numeric reasoning, conditional branching, and multimodal understanding.
+            These tasks were formalised into five categories: goal-directed navigation, movement commands without explicit targets, information and 
+            visuo-lingual queries, zero-shot and few-shot object navigation, and contextual reasoning where implicit references must be understood. 
+            Each language was evaluated with 130 balanced trials spanning short and long-horizon tasks, resulting in more than 70K multi-turn interactions. 
+            To cover languages not supported by existing translation systems, such as Cherokee, Bislama, and African Pidgin, we generated interlingual 
+            translations with GPT-4o and validated them against the NLLB-200 baseline using BLEU, BERTScore, and other metrics, finding near-equal lexical 
+            similarity and over 87 percent semantic alignment, confirming translation reliability.
+            <br><br>
+            The benchmark distinguishes between short-horizon tasks, which consist of atomic actions requiring little to no planning, and long-horizon tasks, 
+            which demand strategic reasoning, multi-step action sequencing, and explicit user approval or rejection before execution.
+          </p>
+        </div>
+      </div>
+
+    <section id="tasks-dash" aria-label="Task distributions">
+      <div class="td-grid">
+        <div id="td-pie-long"  class="td-card"></div>
+        <div id="td-pie-short" class="td-card"></div>
+        <div id="td-bar-long"  class="td-card"></div>
+        <div id="td-bar-short" class="td-card"></div>
+      </div>
+    </section>
+      
+      <!-- <p class="has-text-justified" style="hyphens: auto; overflow-wrap: break-word; word-break: break-word;">
+        <br>
+        A few images of these queries (side-by-side)
+      </p> -->
+    </div>
+
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <br><br>
+          <h3 class="title is-4">Task Diversity</h3>
+          <p class="has-text-justified" style="hyphens: auto; overflow-wrap: break-word; word-break: break-word;">
+            To capture the full complexity of multilingual human-robot interaction, we designed a benchmark of task instructions that test ReLI's 
+            abilities in parsing, environment-based decision making, numeric reasoning, conditional branching, and multimodal understanding.
+            These tasks were formalised into five categories: goal-directed navigation, movement commands without explicit targets, information and 
+            visuo-lingual queries, zero-shot and few-shot object navigation, and contextual reasoning where implicit references must be understood. 
+            Each language was evaluated with 130 balanced trials spanning short and long-horizon tasks, resulting in more than 70K multi-turn interactions. 
+            To cover languages not supported by existing translation systems, such as Cherokee, Bislama, and African Pidgin, we generated interlingual 
+            translations with GPT-4o and validated them against the NLLB-200 baseline using BLEU, BERTScore, and other metrics, finding near-equal lexical 
+            similarity and over 87 percent semantic alignment, confirming translation reliability.
+            <br><br>
+            The benchmark distinguishes between short-horizon tasks, which consist of atomic actions requiring little to no planning, and long-horizon tasks, 
+            which demand strategic reasoning, multi-step action sequencing, and explicit user approval or rejection before execution.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video carousel -->
+    <div class="hero-body">
+      <div class="container">
+        <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 4px; text-align: center;">
+          <div style="flex: 1; font-weight: 900; font-size: 1.5rem;">ConceptFusion</div>
+          <div style="flex: 1; font-weight: 900; font-size: 1.5rem;">LangSplat</div>
+          <div style="flex: 1; font-weight: 900; font-size: 1.5rem;">Ours (ViT-B/16)</div>
+        </div>
+        <div id="results-carousel" class="carousel results-carousel" style="margin-top: -25px;">
+
+          <div class="item item-images" style="height: 100%;">
+            <div style="height: 300px; display: flex; justify-content: center; gap: 10px;">
+              <div style="position: relative;">
+                <img src="static/images/3d/cf/render_coffee_machine.png" alt="Image 1"
+                  style="height: 100%; display: block;">
+                <span
+                  style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; box-shadow: 0 0 2px rgba(0,0,0,0.2); border: 1px solid black;">
+                  coffee machine
+                </span>
+              </div>
+              <!-- Image 2 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/3d/ls/ls_lvl1/render_coffee_machine.png" alt="Image 2"
+                  style="height: 100%; display: block;">
+              </div>
+              <!-- Image 3 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/3d/xf/render_coffee_machine.png" alt="Image 3"
+                  style="height: 100%; display: block;">
+              </div>
+            </div>
+          </div>
+
+          <div class="item item-images" style="height: 100%;">
+            <div style="height: 300px; display: flex; justify-content: center; gap: 10px;">
+              <div style="position: relative;">
+                <img src="static/images/3d/cf/render_milk.png" alt="Image 1" style="height: 100%; display: block;">
+                <span
+                  style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; box-shadow: 0 0 2px rgba(0,0,0,0.2); border: 1px solid black;">
+                  milk
+                </span>
+              </div>
+              <!-- Image 2 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/3d/ls/ls_lvl1/render_milk.png" alt="Image 2"
+                  style="height: 100%; display: block;">
+              </div>
+              <!-- Image 3 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/3d/xf/render_milk.png" alt="Image 3" style="height: 100%; display: block;">
+              </div>
+            </div>
+          </div>
+
+          <div class="item item-images" style="height: 100%;">
+            <div style="height: 300px; display: flex; justify-content: center; gap: 10px;">
+              <div style="position: relative;">
+                <img src="static/images/3d/cf/render_sink.png" alt="Image 1" style="height: 100%; display: block;">
+                <span
+                  style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; box-shadow: 0 0 2px rgba(0,0,0,0.2); border: 1px solid black;">
+                  sink
+                </span>
+              </div>
+              <!-- Image 2 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/3d/ls/ls_lvl1/render_sink.png" alt="Image 2"
+                  style="height: 100%; display: block;">
+              </div>
+              <!-- Image 3 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/3d/xf/render_sink.png" alt="Image 3" style="height: 100%; display: block;">
+              </div>
+            </div>
+          </div>
+
+          <div class="item item-images" style="height: 100%;">
+            <div style="height: 300px; display: flex; justify-content: center; gap: 10px;">
+              <div style="position: relative;">
+                <img src="static/images/3d/cf/render_socket.png" alt="Image 1" style="height: 100%; display: block;">
+                <span
+                  style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; box-shadow: 0 0 2px rgba(0,0,0,0.2); border: 1px solid black;">
+                  socket
+                </span>
+              </div>
+              <!-- Image 2 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/3d/ls/ls_lvl1/render_socket.png" alt="Image 2"
+                  style="height: 100%; display: block;">
+              </div>
+              <!-- Image 3 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/3d/xf/render_socket.png" alt="Image 3" style="height: 100%; display: block;">
+              </div>
+            </div>
+          </div>
+
+          <div class="item item-images" style="height: 100%;">
+            <div style="height: 300px; display: flex; justify-content: center; gap: 10px;">
+              <div style="position: relative;">
+                <img src="static/images/3d/cf/render_sponge.png" alt="Image 1" style="height: 100%; display: block;">
+                <span
+                  style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; box-shadow: 0 0 2px rgba(0,0,0,0.2); border: 1px solid black;">
+                  sponge
+                </span>
+              </div>
+              <!-- Image 2 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/3d/ls/ls_lvl1/render_sponge.png" alt="Image 2"
+                  style="height: 100%; display: block;">
+              </div>
+              <!-- Image 3 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/3d/xf/render_sponge.png" alt="Image 3" style="height: 100%; display: block;">
+              </div>
+            </div>
+          </div>
+
+          <div class="item item-images" style="height: 100%;">
+            <div style="height: 300px; display: flex; justify-content: center; gap: 10px;">
+              <div style="position: relative;">
+                <img src="static/images/3d/cf/render_table_top.png" alt="Image 1" style="height: 100%; display: block;">
+                <span
+                  style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; box-shadow: 0 0 2px rgba(0,0,0,0.2); border: 1px solid black;">
+                  table top
+                </span>
+              </div>
+              <!-- Image 2 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/3d/ls/ls_lvl1/render_table_top.png" alt="Image 2"
+                  style="height: 100%; display: block;">
+              </div>
+              <!-- Image 3 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/3d/xf/render_table_top.png" alt="Image 3" style="height: 100%; display: block;">
+              </div>
+            </div>
+          </div>
+
+          <div class="item item-images" style="height: 100%;">
+            <div style="height: 300px; display: flex; justify-content: center; gap: 10px;">
+              <div style="position: relative;">
+                <img src="static/images/3d/cf/render_towel.png" alt="Image 1" style="height: 100%; display: block;">
+                <span
+                  style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; box-shadow: 0 0 2px rgba(0,0,0,0.2); border: 1px solid black;">
+                  towel
+                </span>
+              </div>
+              <!-- Image 2 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/3d/ls/ls_lvl1/render_towel.png" alt="Image 2"
+                  style="height: 100%; display: block;">
+              </div>
+              <!-- Image 3 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/3d/xf/render_towel.png" alt="Image 3" style="height: 100%; display: block;">
+              </div>
+            </div>
+          </div>
+
+          <div class="item item-images" style="height: 100%;">
+            <div style="height: 300px; display: flex; justify-content: center; gap: 10px;">
+              <div style="position: relative;">
+                <img src="static/images/3d/cf/render_paper_towel.png" alt="Image 1"
+                  style="height: 100%; display: block;">
+                <span
+                  style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; box-shadow: 0 0 2px rgba(0,0,0,0.2); border: 1px solid black;">
+                  paper towel
+                </span>
+              </div>
+              <!-- Image 2 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/3d/ls/ls_lvl1/render_paper_towel.png" alt="Image 2"
+                  style="height: 100%; display: block;">
+              </div>
+              <!-- Image 3 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/3d/xf/render_paper_towel.png" alt="Image 3"
+                  style="height: 100%; display: block;">
+              </div>
+            </div>
+          </div>
+
+          <div class="item item-images" style="height: 100%;">
+            <div style="height: 300px; display: flex; justify-content: center; gap: 10px;">
+              <div style="position: relative;">
+                <img src="static/images/3d/cf/render_chair.png" alt="Image 1" style="height: 100%; display: block;">
+                <span
+                  style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; box-shadow: 0 0 2px rgba(0,0,0,0.2); border: 1px solid black;">
+                  chair
+                </span>
+              </div>
+              <!-- Image 2 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/3d/ls/ls_lvl1/render_chair.png" alt="Image 2"
+                  style="height: 100%; display: block;">
+              </div>
+              <!-- Image 3 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/3d/xf/render_chair.png" alt="Image 3" style="height: 100%; display: block;">
+              </div>
+            </div>
+          </div>
+
+          <div class="item item-images" style="height: 100%;">
+            <div style="height: 300px; display: flex; justify-content: center; gap: 10px;">
+              <div style="position: relative;">
+                <img src="static/images/3d/cf/render_detergent.png" alt="Image 1" style="height: 100%; display: block;">
+                <span
+                  style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; box-shadow: 0 0 2px rgba(0,0,0,0.2); border: 1px solid black;">
+                  detergent
+                </span>
+              </div>
+              <!-- Image 2 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/3d/ls/ls_lvl1/render_detergent.png" alt="Image 2"
+                  style="height: 100%; display: block;">
+              </div>
+              <!-- Image 3 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/3d/xf/render_detergent.png" alt="Image 3" style="height: 100%; display: block;">
+              </div>
+            </div>
+          </div>
+
+          <div class="item item-images" style="height: 100%;">
+            <div style="height: 300px; display: flex; justify-content: center; gap: 10px;">
+              <div style="position: relative;">
+                <img src="static/images/3d/cf/render_faucet.png" alt="Image 1" style="height: 100%; display: block;">
+                <span
+                  style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; box-shadow: 0 0 2px rgba(0,0,0,0.2); border: 1px solid black;">
+                  faucet
+                </span>
+              </div>
+              <!-- Image 2 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/3d/ls/ls_lvl1/render_faucet.png" alt="Image 2"
+                  style="height: 100%; display: block;">
+              </div>
+              <!-- Image 3 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/3d/xf/render_faucet.png" alt="Image 3" style="height: 100%; display: block;">
+              </div>
+            </div>
+          </div>
+
+          <div class="item item-images" style="height: 100%;">
+            <div style="height: 300px; display: flex; justify-content: center; gap: 10px;">
+              <div style="position: relative;">
+                <img src="static/images/3d/cf/render_sugar.png" alt="Image 1" style="height: 100%; display: block;">
+                <span
+                  style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; box-shadow: 0 0 2px rgba(0,0,0,0.2); border: 1px solid black;">
+                  sugar
+                </span>
+              </div>
+              <!-- Image 2 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/3d/ls/ls_lvl1/render_sugar.png" alt="Image 2"
+                  style="height: 100%; display: block;">
+              </div>
+              <!-- Image 3 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/3d/xf/render_sugar.png" alt="Image 3" style="height: 100%; display: block;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column is-full">
+          <br>
+          <p style="text-align: justify;">
+            We showcase qualitative reconstructions and similarity heatmaps from the <i>kitchen</i>, <i>workshop</i>,
+            and <i>table</i> sequences, demonstrating how query specificity affects localization.
+            In the <i>kitchen</i>, a general query like <i>coffee</i> highlights both the coffee machine and the milk
+            carton, capturing broader contextual relevance.
+            In contrast, querying for <i>milk</i> results in a focused response limited to the milk carton.
+            Similarly, in the <i>workshop</i>, a precise query for the <i>Bosch drill</i> produces a sharper activation
+            than the more generic <i>drill</i> query.
+            These examples highlight the open-set nature of our method, enabling flexible interaction across diverse
+            environments and semantic levels.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Video carousel -->
+    <div class="hero-body">
+      <div class="container">
+        <div id="results-carousel" class="carousel results-carousel">
+
+          <div class="item item-images" style="height: 100%;">
+            <div style="height: 300px; display: flex; justify-content: center; gap: 10px;">
+              <div style="position: relative;">
+                <img src="static/images/qualitative/kitchen/coffee_machine_rgb.png" alt="Image 1"
+                  style="height: 100%; display: block;">
+                <span
+                  style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; border: 2px solid black; box-shadow: 0 0 2px rgba(0,0,0,0.2);">
+                  RGB Image
+                </span>
+              </div>
+              <!-- Image 2 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/qualitative/kitchen/sim_coffee.png" alt="Image 2"
+                  style="height: 100%; display: block;">
+                <span
+                  style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; border: 2px solid black; box-shadow: 0 0 2px rgba(0,0,0,0.2);">
+                  Query: <span style="color: red;">coffee</span>
+                </span>
+              </div>
+              <!-- Image 3 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/qualitative/kitchen/sim_milk.png" alt="Image 3"
+                  style="height: 100%; display: block;">
+                <span
+                  style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; border: 2px solid black; box-shadow: 0 0 2px rgba(0,0,0,0.2);">
+                  Query: <span style="color: red;">milk</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="item item-images" style="height: 100%;">
+            <div style="height: 300px; display: flex; justify-content: center; gap: 10px;">
+              <div style="position: relative;">
+                <img src="static/images/qualitative/workshop/left_side_rgb.png" alt="Image 1"
+                  style="height: 100%; display: block;">
+                <span
+                  style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; border: 2px solid black; box-shadow: 0 0 2px rgba(0,0,0,0.2);">
+                  RGB Image
+                </span>
+              </div>
+              <!-- Image 2 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/qualitative/workshop/left_side_toolbox.png" alt="Image 2"
+                  style="height: 100%; display: block;">
+                <span
+                  style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; border: 2px solid black; box-shadow: 0 0 2px rgba(0,0,0,0.2);">
+                  Query: <span style="color: red;">toolbox</span>
+                </span>
+              </div>
+              <!-- Image 3 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/qualitative/workshop/left_side_lathe.png" alt="Image 3"
+                  style="height: 100%; display: block;">
+                <span
+                  style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; border: 2px solid black; box-shadow: 0 0 2px rgba(0,0,0,0.2);">
+                  Query: <span style="color: red;">lathe</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="item item-images" style="height: 100%;">
+            <div style="height: 300px; display: flex; justify-content: center; gap: 10px;">
+              <div style="position: relative;">
+                <img src="static/images/qualitative/workshop/right_side_rgb.png" alt="Image 1"
+                  style="height: 100%; display: block;">
+                <span
+                  style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; border: 2px solid black; box-shadow: 0 0 2px rgba(0,0,0,0.2);">
+                  RGB Image
+                </span>
+              </div>
+              <!-- Image 2 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/qualitative/workshop/right_side_drill.png" alt="Image 2"
+                  style="height: 100%; display: block;">
+                <span
+                  style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; border: 2px solid black; box-shadow: 0 0 2px rgba(0,0,0,0.2);">
+                  Query: <span style="color: red;">drill</span>
+                </span>
+              </div>
+              <!-- Image 3 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/qualitative/workshop/right_side_bosch_drill.png" alt="Image 3"
+                  style="height: 100%; display: block;">
+                <span
+                  style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; border: 2px solid black; box-shadow: 0 0 2px rgba(0,0,0,0.2);">
+                  Query: <span style="color: red;">Bosch drill</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="item item-images" style="height: 100%;">
+            <div style="height: 300px; display: flex; justify-content: center; gap: 10px;">
+              <div style="position: relative;">
+                <img src="static/images/qualitative/workshop/front_rgb.png" alt="Image 1"
+                  style="height: 100%; display: block;">
+                <span
+                  style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; border: 2px solid black; box-shadow: 0 0 2px rgba(0,0,0,0.2);">
+                  RGB Image
+                </span>
+              </div>
+              <!-- Image 2 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/qualitative/workshop/front_power_supply.png" alt="Image 2"
+                  style="height: 100%; display: block;">
+                <span
+                  style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; border: 2px solid black; box-shadow: 0 0 2px rgba(0,0,0,0.2);">
+                  Query: <span style="color: red;">power supply</span>
+                </span>
+              </div>
+              <!-- Image 3 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/qualitative/workshop/front_drawer.png" alt="Image 3"
+                  style="height: 100%; display: block;">
+                <span
+                  style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; border: 2px solid black; box-shadow: 0 0 2px rgba(0,0,0,0.2);">
+                  Query: <span style="color: red;">drawer</span>
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <div class="item item-images" style="height: 100%;">
+            <div style="height: 300px; display: flex; justify-content: center; gap: 10px;">
+              <div style="position: relative;">
+                <img src="static/images/qualitative/table/table_rgb.png" alt="Image 1"
+                  style="height: 100%; display: block;">
+                <span
+                  style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; border: 2px solid black; box-shadow: 0 0 2px rgba(0,0,0,0.2);">
+                  RGB Image
+                </span>
+              </div>
+              <!-- Image 2 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/qualitative/table/table_plant.png" alt="Image 2"
+                  style="height: 100%; display: block;">
+                <span
+                  style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; border: 2px solid black; box-shadow: 0 0 2px rgba(0,0,0,0.2);">
+                  Query: <span style="color: red;">plant</span>
+                </span>
+              </div>
+              <!-- Image 3 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/qualitative/table/table_table.png" alt="Image 3"
+                  style="height: 100%; display: block;">
+                <span
+                  style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; border: 2px solid black; box-shadow: 0 0 2px rgba(0,0,0,0.2);">
+                  Query: <span style="color: red;">table</span>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="hero is-small is-light">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column is-four-fifths">
+          <br><br>
+          <h2 class="title is-3">Interactive Tasks</h2>
+          <p class="has-text-justified" style="hyphens: auto; overflow-wrap: break-word; word-break: break-word;">
+            To move beyond passive perception, robots must engage with their environment through goal-directed actions
+            informed by high-level semantic understanding.
+            Our approach enables this by grounding language queries in a unified 3D representation that is built online
+            from RGB-D input.
+            We explore how such a representation facilitates interactive tasks in both local and extended workspaces,
+            ranging from precision-driven pick-and-place operations to semantically guided navigation across multi-room
+            environments.
+            These demonstrations highlight the system's ability to generalize across scales and platforms while
+            maintaining real-time responsiveness and open-vocabulary flexibility.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-full">
+            <h3 class="title is-4">Manipulation</h3>
+            <p class="has-text-justified" style="hyphens: auto; overflow-wrap: break-word; word-break: break-word;">
+              In our interactive pick-and-place system, users can specify both the object to grasp and the desired
+              placement location through natural language queries.
+              Our method continuously estimates the camera pose, builds a 3D color map, and fuses local
+              language-conditioned embeddings into the scene in real time.
+              When a query is issued, the system computes similarity between the 3D embedding map and the text,
+              segmenting the scene into source and target point clouds.
+              From these, we extract a grasp pose by projecting points onto a plane aligned with the robot's approach
+              direction and selecting the most compact region suitable for a parallel gripper.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  
+
+      <section class="section">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column is-full">
+              <h3 class="title is-4">Room- and Object-Level Localisation</h3>
+              <p class="has-text-justified" style="hyphens: auto; overflow-wrap: break-word; word-break: break-word;">
+                Our method enables real-time, memory-efficient reconstruction across large-scale environments while
+                maintaining both spatial coverage and semantic precision.
+                In the office-floor scenario, we reconstruct a unified 3D map that supports multiple spatial scales,
+                both
+                multi-room and object-level queries.
+                The system is capable of identifying broad semantic regions such as floors that extend across several
+                rooms,
+                as well as individual objects including a first aid kit and a bookshelf.
+                The system remains interactive throughout the reconstruction, updating the map live as new data streams
+                in.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+  </section>
+
+  <section class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-full">
+            <h3 class="title is-4">High-resource languages</h3>
+            <p class="has-text-justified" style="hyphens: auto; overflow-wrap: break-word; word-break: break-word;">
+              ReLI demonstrated near-perfect handling of instructions in major high-resource languages, including English, Spanish, French, and German, 
+              with instruction parsing accuracy consistently above 97-99%. Response times remained fast (~2.10-2.20 seconds), meeting the standards of 
+              an efficient multilingual system. While Indo-European languages performed exceptionally well, a slight drop was observed for languages such 
+              as Arabic and Chinese, mainly due to the complexities of inputting logographic characters in the interaction interface rather than limitations
+               of the model itself. Notably, English and Spanish maintained the highest IPA and TSR throughout.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+      <div class="hero-body">
+      <div class="wide-wrap">
+        <!-- room-level -->
+        <div id="results-carousel-videos">
+        <!-- Slide 1 -->
+        <div class="rl-slide active">
+          <div style="position:relative; width:40%;">
+            <video src="static/videos/sim1-hrl_left_english_german_1.mp4" muted playsinline loop></video>
+          </div>
+          <div style="position:relative; width:60%;">
+            <video src="static/videos/sim1-hrl_right_english_german_1.mp4" muted playsinline loop data-delay="3100"></video>
+            <span style="position:absolute; top:1px; right:4px; background:#fff; color:#000; font-weight:bold; font-size:20px; padding:4px 8px; border-radius:8px; border:3px solid #000;">
+              <span style="color:blue;">English</span>-<span style="color:red;">German</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Slide 2 -->
+        <div class="rl-slide">
+          <div style="position:relative; width:40%;">
+            <video src="static/videos/sim1-hrl_left_french_russian.mp4" muted playsinline loop></video>
+          </div>
+          <div style="position:relative; width:60%;">
+            <video src="static/videos/sim1-hrl_right_french_russian.mp4" muted playsinline loop data-delay="18000"></video>
+            <span style="position:absolute; top:1px; right:4px; background:#fff; color:#000; font-weight:bold; font-size:20px; padding:4px 8px; border-radius:4px; border:3px solid #000;">
+              <span style="color:blue;">French</span>-<span style="color:red;">Russian</span>
+            </span>
+          </div>
+        </div>
+
+        <!-- Slide 3 -->
+        <div class="rl-slide">
+          <div style="position:relative; width:40%;">
+            <video src="static/videos/sim1-hrl_left_chinese_japanese.mp4" muted playsinline loop></video>
+          </div>
+          <div style="position:relative; width:60%;">
+            <video src="static/videos/sim1-hrl_right_chinese_japanese.mp4" muted playsinline loop data-delay="3000"></video>
+            <span style="position:absolute; top:1px; right:4px; background:#fff; color:#000; font-weight:bold; font-size:20px; padding:4px 8px; border-radius:4px; border:3px solid #000;">
+              <span style="color:blue;">Chinese (Simplified)</span>-<span style="color:red;">Japanese</span>
+            </span>
+          </div>
+        </div>
+
+      <!-- Arrows -->
+      <button class="nav prev" aria-label="Previous">&#9664;</button>
+      <button class="nav next" aria-label="Next">&#9654;</button>
+    </div>
+    </div>
+    </div>
+
+    <section class="section">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column is-full">
+            <h3 class="title is-4">Low-resource languages</h3>
+            <p class="has-text-justified" style="hyphens: auto; overflow-wrap: break-word; word-break: break-word;">
+              Despite limited training data, ReLI achieved performance comparable to high-resource settings across many low-resource languages. 
+              Irish, Sicilian, Shona, Yoruba, and Javanese each exceeded 96% IPA and TSR, while more challenging languages like Serbian, Tibetan,
+              Burmese, and Fijian showed slightly lower scores (&lt;95%). Even so, ReLI sustained a strong success rate between 92-98%, with average
+              response times ranging from 2.12-2.76 seconds, only marginally higher than high-resource counterparts. This demonstrates ReLI's capacity
+              to generalize effectively across linguistically diverse, resource-scarce settings.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+      <!-- End video carousel -->
+
+
+  <!-- Video carousel -->
+    <div class="hero-body">
+      <div class="container">
+        <div style="display: flex; justify-content: center; gap: 20px; margin-bottom: 4px; text-align: center;">
+          <div style="flex: 1; font-weight: 900; font-size: 1.5rem;">ConceptFusion</div>
+          <div style="flex: 1; font-weight: 900; font-size: 1.5rem;">LangSplat</div>
+          <div style="flex: 1; font-weight: 900; font-size: 1.5rem;">Ours (ViT-B/16)</div>
+        </div>
+        <div id="results-carousel" class="carousel results-carousel" style="margin-top: -25px;">
+
+          <div class="item item-images" style="height: 100%;">
+            <div style="height: 300px; display: flex; justify-content: center; gap: 10px;">
+              <div style="position: relative;">
+                <img src="static/images/3d/cf/render_coffee_machine.png" alt="Image 1"
+                  style="height: 100%; display: block;">
+                <span
+                  style="position: absolute; top: 8px; left: 8px; background: white; color: black; font-weight: bold; font-size: 14px; padding: 4px 8px; border-radius: 4px; box-shadow: 0 0 2px rgba(0,0,0,0.2); border: 1px solid black;">
+                  coffee machine
+                </span>
+              </div>
+              <!-- Image 2 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/3d/ls/ls_lvl1/render_coffee_machine.png" alt="Image 2"
+                  style="height: 100%; display: block;">
+              </div>
+              <!-- Image 3 with simple text -->
+              <div style="position: relative;">
+                <img src="static/images/3d/xf/render_coffee_machine.png" alt="Image 3"
+                  style="height: 100%; display: block;">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+  <!--BibTex citation -->
+  <section class="section" id="BibTeX">
+    <div class="container is-max-desktop content">
+      <h2 class="title">BibTeX</h2>
+      <pre><code>BibTex Code Here</code></pre>
+    </div>
+  </section>
+  <!--End BibTex citation -->
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8">
+          <div class="content">
+
+            <p>
+              This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template"
+                target="_blank">Academic Project Page Template</a> which was adopted from the <a
+                href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
+              You are free to borrow the source code of this website, we just ask that you link back to this page in the
+              footer. <br> This website is licensed under a <a rel="license"
+                href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+                Commons Attribution-ShareAlike 4.0 International License</a>.
+            </p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Statcounter tracking code -->
+
+  <!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+  <!-- End of Statcounter Code -->
+
+  <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
+  <script>
+    bulmaCarousel.attach('.carousel.results-carousel', {
+      autoplay: false,
+      loop: true
+    });
+  </script>
+
+  <!-- Plotly (CDN) -->
+<script src="https://cdn.plot.ly/plotly-2.34.0.min.js"></script>
+
+<style>
+  /* Scoped styles */
+  #lang-dash { --map-h: 56vh; --bot-h: 32vh; padding: 0; }
+  #lang-dash .ld-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: var(--map-h) var(--bot-h);
+    gap: 12px;
+    align-items: stretch;
+  }
+  #ld-map  { grid-column: 1 / 3; }
+  .ld-card { width: 100%; height: 100%; min-height: 260px; }
+  @media (max-width: 900px) {
+    #lang-dash { --map-h: 46vh; --bot-h: 40vh; }
+    #lang-dash .ld-grid {
+      grid-template-columns: 1fr; grid-template-rows: var(--map-h) var(--bot-h) var(--bot-h);
+    }
+    #ld-map { grid-column: 1; }
+  }
+</style>
+
+<!-- Plotly + PapaParse (CSV parser) -->
+<script src="https://cdn.plot.ly/plotly-2.34.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+
+<style>
+  #lang-dash{--map-h:56vh;--bot-h:32vh;padding:0}
+  #lang-dash .ld-grid{
+    display:grid;gap:12px;
+    grid-template-columns:1fr 1fr;
+    grid-template-rows:var(--map-h) var(--bot-h);
+    align-items:stretch
+  }
+  #ld-map{grid-column:1/3}
+  .ld-card{width:100%;height:100%;min-height:260px}
+  @media (max-width:900px){
+    #lang-dash{--map-h:46vh;--bot-h:40vh}
+    #lang-dash .ld-grid{
+      grid-template-columns:1fr;
+      grid-template-rows:var(--map-h) var(--bot-h) var(--bot-h)
+    }
+    #ld-map{grid-column:1}
+  }
+</style>
+
+<script>
+(async function initDash() {
+  // ---------- Load CSV ----------
+  const CSV_PATH = "world_languages_updated.csv";
+  const csv = await new Promise((resolve, reject) => {
+    Papa.parse(CSV_PATH, {
+      download: true, header: true, skipEmptyLines: true,
+      complete: r => resolve(r.data), error: reject
+    });
+  });
+
+  // ---------- Helpers (mirror your Python logic) ----------
+  function parseSpeakers(s) {
+    if (s == null) return null;
+    const t = String(s).trim().toUpperCase();
+    if (t.includes("N/A") || t.includes("EXTINCT")) return null;
+    const m = t.match(/^~?\s*([0-9]+(?:\.[0-9]+)?)\s*([BMK])?/);
+    if (!m) return null;
+    let v = parseFloat(m[1]); const suf = m[2] || "";
+    if (suf === "B") v *= 1_000_000_000;
+    else if (suf === "M") v *= 1_000_000;
+    else if (suf === "K") v *= 1_000;
+    return v;
+  }
+  function splitCountries(s) {
+    if (!s) return []; return String(s).split(",").map(x => x.trim()).filter(Boolean);
+  }
+  function normRisk(x) {
+    const t = String(x || "").toLowerCase();
+    if (t.startsWith("high")) return "High";
+    if (t.startsWith("low")) return "Low";
+    if (t.startsWith("vul")) return "Vulnerable";
+    return "Low";
+  }
+
+  // ---------- Build exploded rows (country-level membership) ----------
+  // Each row -> possibly many countries
+  const exploded = [];
+  for (const row of csv) {
+    const lang = row["Language Name"];
+    const fam  = row["Language Family"] || "Other";
+    const risk = normRisk(row["Resources"]);
+    const spk  = parseSpeakers(row["Number of Speakers"]);
+    for (const c of splitCountries(row["Primary Countries"])) {
+      exploded.push({ country: c, lang, family: fam, risk, speakers: spk });
+    }
+  }
+
+  // ---------- Country counts for choropleth ----------
+  const countryToSet = new Map();
+  for (const r of exploded) {
+    if (!countryToSet.has(r.country)) countryToSet.set(r.country, new Set());
+    countryToSet.get(r.country).add(r.lang);
+  }
+  const countryCounts = Array.from(countryToSet.entries())
+    .map(([Country, set]) => ({ Country, LanguageCount: set.size }))
+    .sort((a,b) => a.Country.localeCompare(b.Country));
+  const COUNTRY_NAMES = countryCounts.map(d => d.Country);
+  const totals = countryCounts.map(d => d.LanguageCount);
+  const zmax = Math.max(...totals);
+
+  // ---------- GLOBAL family × risk counts (NOT per-country) ----------
+  // Count each language once globally by its family/risk.
+  const famRisk = new Map(); // family -> {High,Low,Vulnerable}
+  for (const row of csv) {
+    const fam  = (row["Language Family"] || "Other");
+    const risk = normRisk(row["Resources"]);
+    if (!famRisk.has(fam)) famRisk.set(fam, {High:0, Low:0, Vulnerable:0});
+    famRisk.get(fam)[risk] += 1;
+  }
+  const ALL_FAMILIES = Array.from(famRisk.keys()).sort();
+  const FR_HIGH = ALL_FAMILIES.map(f => famRisk.get(f).High);
+  const FR_LOW  = ALL_FAMILIES.map(f => famRisk.get(f).Low);
+  const FR_VUL  = ALL_FAMILIES.map(f => famRisk.get(f).Vulnerable);
+
+  // ---------- GLOBAL top languages by speakers ----------
+  const langAgg = new Map(); // name -> speakers
+  for (const row of csv) {
+    const name = row["Language Name"];
+    const spk  = parseSpeakers(row["Number of Speakers"]);
+    if (spk == null) continue;
+    langAgg.set(name, (langAgg.get(name)||0) + spk);
+  }
+  const globalTotal = Array.from(langAgg.values()).reduce((a,b)=>a+b,0) || 1;
+  const TOP = Array.from(langAgg.entries())
+  .map(([name, spk]) => ({ name, spk, pct: (spk/globalTotal)*100 }))
+  .sort((a,b)=>b.spk - a.spk)
+  .slice(0, 15);
+  const TOP_NAMES = TOP.map(d => d.name);
+  const TOP_SPK   = TOP.map(d => d.spk);
+  const TOP_PCT   = TOP.map(d => d.pct);
+
+
+  // ---------- Map (NO digits; only hover tooltip) ----------
+  const hotspots = {
+    type: "scattergeo",
+    locationmode: "country names",
+    locations: COUNTRY_NAMES,      // same array you already have
+    mode: "markers",
+    marker: { size: 24, color: "rgba(0,0,0,0.001)" }, // invisible but hoverable
+    hoverinfo: "skip",
+    showlegend: false
+  };
+  const base = {
+    type:"choropleth", locationmode:"country names",
+    locations: COUNTRY_NAMES, z: totals.map(()=>0.15),
+    showscale:false, hoverinfo:"skip",
+    colorscale:[[0,"#f4f1ea"],[1,"#f4f1ea"]],
+    marker:{line:{color:"#cfcfcf",width:0.4}}
+  };
+  const layer = {
+    type:"choropleth", locationmode:"country names",
+    locations: COUNTRY_NAMES, z: totals, text: COUNTRY_NAMES,
+    hovertemplate:"%{text}<br>Languages: %{z}<extra></extra>",
+    zmin:0, zmax,
+    colorscale:[[0,"#fde0dd"],[0.2,"#fcc5c0"],[0.4,"#fa9fb5"],[0.6,"#f768a1"],[0.8,"#dd3497"],[1,"#7a0177"]],
+    colorbar:{ title:"", thickness:12 },
+    marker:{line:{color:"#999",width:0.6}}
+  };
+  const hoverHL = {
+    type:"choropleth", locationmode:"country names",
+    locations: [], z: [], showscale:false, hoverinfo:"skip",
+    colorscale:[[0,"rgba(0,0,0,0)"],[1,"rgba(122,1,119,0.95)"]],
+    zmin:0, zmax:1, marker:{line:{color:"#222",width:2.6}}
+  };
+  Plotly.newPlot("ld-map", [base, layer, hoverHL, hotspots], {
+  hovermode: "closest",
+  margin:{l:0,r:0,t:0,b:0},
+  geo:{ projection:{type:"natural earth"},
+        lataxis:{range:[-60,85]}, lonaxis:{range:[-180,180]},
+        showcountries:true, countrycolor:"#ccc",
+        showland:true, landcolor:"#fafafa",
+        showlakes:true, lakecolor:"#fff" }
+  }, {displayModeBar:false});
+
+  // Make the hover outline a bit bolder:
+  hoverHL.marker.line.width = 3.2;
+
+  // ---------- Colors ----------
+  const COLORS = { High:"#2ca02c", Low:"#1f77b4", Vulnerable:"#ff7f0e" };
+
+
+  // ---------- Global families chart (stacked) with highlight on hover ----------
+  const __famOrder = ALL_FAMILIES
+    .map((f,i) => ({ i, f, tot: (FR_HIGH[i]||0) + (FR_LOW[i]||0) + (FR_VUL[i]||0) }))
+    .sort((a,b) => b.tot - a.tot)
+    .map(o => o.i);
+
+  const formatSpeakers = spk => {
+  if (spk >= 1e9) return (spk/1e9).toFixed(1) + "B";
+  if (spk >= 1e6) return (spk/1e6).toFixed(1) + "M";
+  if (spk >= 1e3) return (spk/1e3).toFixed(1) + "K";
+  return spk.toString();
+  };
+
+  const FAMILIES_DESC = __famOrder.map(i => ALL_FAMILIES[i]);
+  const FR_HIGH_DESC  = __famOrder.map(i => FR_HIGH[i]);
+  const FR_LOW_DESC   = __famOrder.map(i => FR_LOW[i]);
+  const FR_VUL_DESC   = __famOrder.map(i => FR_VUL[i]);
+
+  function drawFamilies(highlightFamilies = new Set()) {
+    const opacityArr = FAMILIES_DESC.map(f => highlightFamilies.has(f) ? 1.0 : 0.35);
+
+    const rgba = (hex, a) => {
+    const m = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+    const r = parseInt(m[1],16), g = parseInt(m[2],16), b = parseInt(m[3],16);
+    return opacityArr.map(o => `rgba(${r},${g},${b},${o})`);
+    };
+
+    const traces = [
+      { type:"bar", name:"High",       x:FAMILIES_DESC, y:FR_HIGH_DESC,  marker:{ color: rgba("#2ca02c", opacityArr) } },
+      { type:"bar", name:"Low",        x:FAMILIES_DESC, y:FR_LOW_DESC,   marker:{ color: rgba("#1f77b4", opacityArr) } },
+      { type:"bar", name:"Vulnerable", x:FAMILIES_DESC, y:FR_VUL_DESC,   marker:{ color: rgba("#ff7f0e", opacityArr) } }
+    ];
+
+    Plotly.react("ld-fams", traces, {
+      barmode:"stack",
+      title:{ text:`Languages by Family`, x:0.5, xanchor:"center" },
+      margin:{ l:50, r:10, t:40, b:90 },
+      xaxis:{ tickangle:-35 },
+      yaxis:{ title:"Number of Languages", rangemode:"tozero" },
+      legend:{ orientation:"h", x:0.5, xanchor:"center", y:1.05 }
+    }, { displayModeBar:false });
+  }
+
+  
+  // 1) Aggregate & pick top 5 per risk (same as before)
+  const riskBuckets = { High: new Map(), Low: new Map(), Vulnerable: new Map() };
+  for (const row of csv) {
+    const name = row["Language Name"];
+    const spk  = parseSpeakers(row["Number of Speakers"]);
+    const risk = normRisk(row["Resources"]);
+    if (!name || spk == null) continue;
+    const b = riskBuckets[risk] || riskBuckets.Low;
+    b.set(name, (b.get(name) || 0) + spk);
+  }
+  function topN(map, n) {
+    return Array.from(map.entries()).map(([name, spk]) => ({ name, spk }))
+      .sort((a,b) => b.spk - a.spk).slice(0, n);
+  }
+  const TOP5 = {
+    High:       topN(riskBuckets.High, 5),
+    Low:        topN(riskBuckets.Low, 5),
+    Vulnerable: topN(riskBuckets.Vulnerable, 5)
+  };
+
+  // 2) Build Y order
+  const Y_ORDER = [
+    ...TOP5.High.map(d => `High — ${d.name}`),
+    ...TOP5.Low.map(d => `Low — ${d.name}`),
+    ...TOP5.Vulnerable.map(d => `Vulnerable — ${d.name}`)
+  ];
+
+  // 3) Set a small epsilon so tiny bars appear, and switch to log axis
+  const maxSpk = Math.max(
+    ...TOP5.High.map(d=>d.spk), ...TOP5.Low.map(d=>d.spk), ...TOP5.Vulnerable.map(d=>d.spk),
+    1
+  );
+  const EPS = maxSpk * 1e-3; // ~0.1% of the largest bar
+
+  const hiY = TOP5.High.map(d => `${d.name}`);
+  const loY = TOP5.Low.map(d => `${d.name}`);
+  const vuY = TOP5.Vulnerable.map(d => `${d.name}`);
+
+  const hiX = TOP5.High.map(d => Math.max(d.spk, EPS));
+  const loX = TOP5.Low.map(d => Math.max(d.spk, EPS));
+  const vuX = TOP5.Vulnerable.map(d => Math.max(d.spk, EPS));
+
+  // 4) One-time render (log axis + custom tick labels with K/M/B)
+  Plotly.newPlot("ld-top", [
+    {
+      type: "bar", orientation: "h", name: "High",
+      y: hiY, x: hiX,
+      customdata: TOP5.High.map(d => d.spk), // true values for hover
+      marker: { color: hiY.map(() => "rgba(44,160,44,0.35)") },
+      hovertemplate: "%{y}: %{customdata:,}<extra></extra>"
+    },
+    {
+      type: "bar", orientation: "h", name: "Low",
+      y: loY, x: loX,
+      customdata: TOP5.Low.map(d => d.spk),
+      marker: { color: loY.map(() => "rgba(31,119,180,0.35)") },
+      hovertemplate: "%{y}: %{customdata:,}<extra></extra>"
+    },
+    {
+      type: "bar", orientation: "h", name: "Vulnerable",
+      y: vuY, x: vuX,
+      customdata: TOP5.Vulnerable.map(d => d.spk),
+      marker: { color: vuY.map(() => "rgba(255,127,14,0.35)") },
+      hovertemplate: "%{y}: %{customdata:,}<extra></extra>"
+    }
+  ], {
+    barmode: "overlay",
+    title: { text: "Languages by Risk (Logarithmic)", x: 0.60, xanchor: "center" },
+    margin: { l: 180, r: 30, t: 40, b: 40 },
+    xaxis: {
+      type: "log",
+      range: [Math.log10(EPS), Math.log10(maxSpk * 1.2)],
+      tickvals: [1e3,1e4,1e5,1e6,1e7,1e8,1e9,1e10],
+      ticktext: ["1K","10K","100K","1M","10M","100M","1B","10B"],
+      title: "Approx. No. of Speakers"
+    },
+    yaxis: {
+      automargin: true,
+      categoryorder: "array",
+      categoryarray: Y_ORDER,
+      autorange: "reversed"
+    },
+    legend: {
+      orientation: "v", x: 1, xanchor: "right", y: 0, yanchor: "bottom", font: {size:11}, 
+      bgcolor: "rgba(255,255,255,0.85)", bordercolor: "rgba(0,0,0,0.25)", borderwidth:1, 
+      tracegroupgap: 10
+    }
+  }, { displayModeBar: false });
+
+  // 5) Hover highlight from the map: recolor only matching bars
+  function drawTop(highlightSet = new Set()) {
+    const hiColors = hiY.map(lbl => {
+      const name = lbl.replace(/^High — /,''); 
+      return highlightSet.has(name) ? "rgba(44,160,44,1)" : "rgba(44,160,44,0.35)";
+    });
+    const loColors = loY.map(lbl => {
+      const name = lbl.replace(/^Low — /,''); 
+      return highlightSet.has(name) ? "rgba(31,119,180,1)" : "rgba(31,119,180,0.35)";
+    });
+    const vuColors = vuY.map(lbl => {
+      const name = lbl.replace(/^Vulnerable — /,''); 
+      return highlightSet.has(name) ? "rgba(255,127,14,1)" : "rgba(255,127,14,0.35)";
+    });
+    Plotly.update("ld-top", { "marker.color": [hiColors, loColors, vuColors] }, {}, [0,1,2]);
+  }
+
+  // ---------- Hover wiring ----------
+  const mapNode = document.getElementById("ld-map");
+
+  function onHoverCountry(country) {
+    // Outline pop
+    Plotly.restyle("ld-map", { locations: [[country]], z: [[1]] }, [2]);
+
+    // Compute highlight sets from exploded rows for this country
+    const famSet = new Set();
+    const langSet = new Set();
+    for (const r of exploded) {
+      if (r.country === country) {
+        famSet.add(r.family);
+        langSet.add(r.lang);
+      }
+    }
+    drawFamilies(famSet);
+    drawTop(langSet);
+  }
+  function onUnhover() {
+    Plotly.restyle("ld-map", { locations: [[]], z: [[]] }, [2]);
+    drawFamilies(new Set()); // no highlight (all faded equally)
+    drawTop(new Set());      // no highlight (all faded equally)
+  }
+
+  mapNode.on("plotly_hover", ev => {
+    const country = ev?.points?.[0]?.location; // country name
+    if (country) onHoverCountry(country);
+  });
+  mapNode.on("plotly_unhover", onUnhover);
+
+  drawFamilies(new Set());
+  drawTop(new Set());
+  })();
+  </script>
+<!-- ▲ END SECTION -->
+
+  <style>
+    #tasks-dash{--pie-h:34vh;--bar-h:32vh;padding:0}
+    #tasks-dash .td-grid{
+      display:grid;gap:12px;
+      grid-template-columns:1fr 1fr;
+      grid-template-rows:var(--pie-h) var(--bar-h);
+      align-items:stretch
+    }
+    .td-card{width:100%;height:100%;min-height:240px}
+    @media (max-width:900px){
+      #tasks-dash{--pie-h:32vh;--bar-h:36vh}
+      #tasks-dash .td-grid{
+        grid-template-columns:1fr;
+        grid-template-rows:var(--pie-h) var(--pie-h) var(--bar-h) var(--bar-h)
+      }
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <script>
+  (async function(){
+    const CSV_PATH = "gt_instruction.csv";
+
+    // ---------- load ----------
+    const rows = await new Promise((resolve, reject) => {
+      Papa.parse(CSV_PATH, { download:true, header:true, skipEmptyLines:true,
+        complete: r => resolve(r.data), error: reject });
+    });
+
+    // ---------- helpers ----------
+    const trimNoSpace = s => String(s||"").replace(/\s+/g,"");
+    const splitList   = s => trimNoSpace(s).split(",").filter(Boolean);
+
+    // ---------- classify & count (matches your Python) ----------
+    // Short-Horizon: exactly 1 primitive; Long-Horizon: >1
+    const counters = {
+      "Long-Horizon": new Map(),
+      "Short-Horizon": new Map()
+    };
+    for (const r of rows) {
+      const prims = splitList(r["TaskPrimitives"]);
+      if (!prims.length) continue;
+      const taskType = (prims.length === 1) ? "Short-Horizon" : "Long-Horizon";
+      const m = counters[taskType];
+      for (const p of prims) m.set(p, (m.get(p)||0) + 1);
+    }
+
+    // union of all primitive labels, stable order by global total
+    const global = new Map();
+    for (const t of Object.keys(counters)) {
+      for (const [k,v] of counters[t]) global.set(k, (global.get(k)||0)+v);
+    }
+    const labels = Array.from(global.entries()).sort((a,b)=>b[1]-a[1]).map(d=>d[0]);
+
+    // arrays per horizon (counts + percent)
+    function arraysFor(type){
+      const m = counters[type], total = Array.from(m.values()).reduce((a,b)=>a+b,0)||1;
+      const counts = labels.map(l => m.get(l)||0);
+      const perc   = counts.map(v => v/total);
+      return { counts, perc, total };
+    }
+    const L = arraysFor("Long-Horizon");
+    const S = arraysFor("Short-Horizon");
+
+    // nice colors (stable across all four plots)
+    const palette = ["#d95f02","#1b9e77","#377eb8","#e6c229","#9467bd","#a6761d","#66a61e"];
+    const COLORS  = labels.map((_,i) => palette[i % palette.length]);
+
+    // ---------- draw pies ----------
+    function pie(divId, values, title){
+      Plotly.newPlot(divId, [{
+        type:"pie", hole:0.45, 
+        sort:false, 
+        showlegend:false,
+        labels, values,
+        textinfo:"percent", 
+        textposition:"inside",
+        pull: labels.map(()=>0),
+        marker:{ colors: COLORS }
+      }], {
+        title:{text:title, x:0.5},
+        margin:{l:10,r:10,t:40,b:10},
+        showlegend:false
+      }, {displayModeBar:false});
+    }
+    pie("td-pie-long",  L.perc, "Long-Horizon");
+    pie("td-pie-short", S.perc, "Short-Horizon");
+
+    // ---------- draw bars ----------
+    function bar(divId, values, title){
+      Plotly.newPlot(divId, [{
+        type:"bar",
+        x: labels, y: values,
+        marker:{ color: COLORS.map(c => c.replace(")",",0.35)").replace("rgb","rgba").replace("#","")) }, // fade via rgba
+        hovertemplate:"%{x}: %{y}<extra></extra>",
+        showlegend:false
+      }], {
+        title:{text:title, x:0.5},
+        margin:{l:50,r:10,t:40,b:60},
+        yaxis:{ title:"Task Distributions", rangemode:"tozero" },
+        showlegend:false
+      }, {displayModeBar:false});
+    }
+    bar("td-bar-long",  L.counts);
+    bar("td-bar-short", S.counts);
+
+    // ---------- linking (pop-out + highlight) ----------
+    const pieLong  = document.getElementById("td-pie-long");
+    const pieShort = document.getElementById("td-pie-short");
+    const barLong  = document.getElementById("td-bar-long");
+    const barShort = document.getElementById("td-bar-short");
+
+    const pop = (divId, idx) => {
+      const pulls = labels.map(()=>0); if (idx>=0) pulls[idx]=0.08;
+      Plotly.restyle(divId, {pull:[pulls]}, [0]);
+    };
+    const colorize = (divId, activeLabel=null) => {
+      const colors = labels.map((l,i) => {
+        const rgba = (hex, a=1) => {
+          const m = /^#?([a-f\d]{2})([a-f\d]{2})([a-f\d]{2})$/i.exec(hex);
+          const [r,g,b] = [parseInt(m[1],16),parseInt(m[2],16),parseInt(m[3],16)];
+          return `rgba(${r},${g},${b},${a})`;
+        };
+        return rgba(COLORS[i], (activeLabel && l===activeLabel) ? 1.0 : 0.35);
+      });
+      Plotly.restyle(divId, {"marker.color":[colors]}, [0]);
+    };
+
+    // pie ↔ bar (Long)
+    pieLong.on("plotly_hover", ev => {
+      const i = ev.points?.[0]?.pointNumber ?? -1, lab = labels[i];
+      pop("td-pie-long", i); colorize("td-bar-long", lab);
+    });
+    pieLong.on("plotly_unhover", () => { pop("td-pie-long",-1); colorize("td-bar-long", null); });
+
+    // pie ↔ bar (Short)
+    pieShort.on("plotly_hover", ev => {
+      const i = ev.points?.[0]?.pointNumber ?? -1, lab = labels[i];
+      pop("td-pie-short", i); colorize("td-bar-short", lab);
+    });
+    pieShort.on("plotly_unhover", () => { pop("td-pie-short",-1); colorize("td-bar-short", null); });
+
+    // bar → pie (Long)
+    barLong.on("plotly_hover", ev => {
+      const lab = ev.points?.[0]?.x; const idx = labels.indexOf(lab);
+      pop("td-pie-long", idx); colorize("td-bar-long", lab);
+    });
+    barLong.on("plotly_unhover", () => { pop("td-pie-long",-1); colorize("td-bar-long", null); });
+
+    // bar → pie (Short)
+    barShort.on("plotly_hover", ev => {
+      const lab = ev.points?.[0]?.x; const idx = labels.indexOf(lab);
+      pop("td-pie-short", idx); colorize("td-bar-short", lab);
+    });
+    barShort.on("plotly_unhover", () => { pop("td-pie-short",-1); colorize("td-bar-short", null); });
+  })();
+  </script>
+<!-- ===== /Task Distributions ===== -->
+
+
+
+<script>
+(function () {
+  const root = document.getElementById('results-carousel-videos');
+  if (!root) return;
+
+  const slides = Array.from(root.querySelectorAll('.rl-slide'));
+  const prevBtn = root.querySelector('.prev');
+  const nextBtn = root.querySelector('.next');
+  let idx = 0;
+  let timers = [];
+
+  function stopAll() {
+    // clear timers first
+    timers.forEach(t => clearTimeout(t));
+    timers = [];
+    // stop and reset videos
+    slides.forEach(slide => {
+      slide.querySelectorAll('video').forEach(v => {
+        try { v.pause(); v.currentTime = 0; } catch(e) {}
+      });
+    });
+  }
+
+  function playActive() {
+    const slide = slides[idx];
+    const vids = slide.querySelectorAll('video');
+
+    vids.forEach(v => {
+      const delay = parseInt(v.dataset.delay || '0', 10);
+      const start = () => {
+        try {
+          v.muted = true;     // autoplay policy safety
+          v.playsInline = true;
+          v.play().catch(() => {});
+        } catch(e) {}
+      };
+      if (delay > 0) {
+        timers.push(setTimeout(start, delay));
+      } else {
+        start();
+      }
+    });
+  }
+
+  function show(i) {
+    stopAll();
+    slides.forEach(s => s.classList.remove('active'));
+    idx = (i + slides.length) % slides.length;
+    slides[idx].classList.add('active');
+    playActive();
+  }
+
+  prevBtn.addEventListener('click', () => show(idx - 1));
+  nextBtn.addEventListener('click', () => show(idx + 1));
+
+  // kick off first slide
+  playActive();
+})();
+</script>
+
+<!-- === /Room-level VIDEO carousel === -->
+
+
+
+</body>
+
+</html>

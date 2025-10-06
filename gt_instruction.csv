@@ -1,0 +1,131 @@
+ID,UserInstructions,TaskPrimitives
+1,"Could you go to the destination x = 2, y = 2, z = 0. While there, turn 90 degrees to the left and move 1.5m forward at the speed of 0.8m/s. Afterwards, describe what you can see around you. Also, send me details about your current orientation and your coordinates.","G_n,W_c,Q_i"
+2,"Go to the location with coordinates (6, 0, 0). While there, turn 90 degrees to the right and describe what you can see around you. Afterwards, move 2.5 m forward at the speed of 0.8 m/s. Then, send me details about your current orientation and your coordinates. Finally, among your known destinations, head to the location where one can make administrative inquiries. Do not forget to send me a photo when you complete the tasks and return to the position (0, 0,0).","G_n,W_c,Q_i,C_r"
+3,"How long would it take you to travel between the locations (2, 2, 0) and (0, -6, 0) at the speed of 2.88km/hr?",Q_i
+4,"Go to (2, -1, 0) at 0.5 m/s, then rotate 90 degrees to the left and move forward 1 meter.","G_n,W_c"
+5,"Move 2 meters forward at speed 0.3 m/s, turn right 45 degrees, then move 1 meter backward.",W_c
+6,"Where are you right now, and what is your orientation?",Q_i
+7,Navigate to the newly detected chair close to you.,O_n
+8,Head to the secretary's office without exceeding 0.4 m/s.,G_n
+9,"Rotate 180 degrees at radius 0.5 meters and speed 0.25 m/s, then stop all movement.",W_c
+10,What objects do you see in front of you currently?,Q_i
+11,"Drive forward 1 meter, then rotate to face any detected with the highest probabilitiy.","W_c,O_n"
+12,"Move back. Pause for 10s, then move in a sqaure pattern of length 3.5m.",W_c
+13,Please take a picture of your surroundings and send it to me.,Q_i
+14,"Among your known destinations, take me to the place where I can handle administrative tasks.",C_r
+15,"Move forward 1.2 meters at speed 0.2 m/s, then turn left 90 degrees, then move backward 2 meters.",W_c
+16,"Go to the location x:-1, y:3, z:0 at max speed, then describe everything you detect there.","G_n,Q_i"
+17,"Which direction are you facing, and what is your yaw angle in degrees?",Q_i
+18,Move front and then navigate to the workshop.,"W_c, G_n"
+19,Please rotate 45 degrees to the left and move 2 meters at 0.3 m/s.,W_c
+20,"What is your maximum movement speed, and how far can you travel at 0.5m/s?",Q_i
+21,"Send me a live image, then list any potential obstacles you detect.",Q_i
+22,Move backward 1.5 meters at 0.5 m/s and then turn 180 degrees.,W_c
+23,"Take me to the place where I can cook meals, but keep your speed under 0.4 m/s.",C_r
+24,"Rotate to face any detected chair, then move forward 1 meter at 0.2 m/s towards it.","O_n,W_c"
+25,Describe any object in your field of view right now.,Q_i
+26,"Move forward 2 meters, rotate 90 degrees with radius 1 meter, then proceed another 2 meters.",W_c
+27,"Head to x:5, y:-2, z:0, and if you see a person there, stop in front of them.","G_n,O_n,C_r"
+28,Which tasks are you capable of performing right now?,Q_i
+29,"Go to the kitchen quickly, then describe your surroundings once you arrive.","G_n,Q_i"
+30,"Move forward 1 meter, move backward 1 meter, then turn left 90 degrees at speed 20 deg/s.",W_c
+31,"Navigate to the location x:1, y:4, z:0 at 0.3 m/s, rotate 180 degrees, and describe what you see.","G_n,W_c,Q_i"
+32,Could you rotate to face any detected person and then approach it by 1.5 meters?,"O_n,W_c"
+33,Tell me your current orientation and coordinates.,Q_i
+34,"Turn right 45 degrees, stop all actions for 8 seconds, and then move forward for 2 meters at 0.2 m/s.",W_c
+35,"Among your known destinations, take me to where I can print documents or manage printing tasks.",C_r
+36,"Perform a semicircle drive with radius 3 m for 180 degrees at 0.25 m/s, then stop.",W_c
+37,"Move forward 2 meters at 0.4 m/s, turn right 90 degrees, then describe any objects you detect.","W_c,Q_i"
+38,"Go to x:-3, y:2, z:0, then rotate 90 degrees left, then move 1.5 meters forward at 0.2 m/s.","G_n,W_c"
+39,Please show me an image of your front view now.,Q_i
+40,What company built you and what are your capabuilities?,Q_i
+41,Drive in a circular path of radius 2 m for 360 degrees at speed 0.3 m/s.,W_c
+42,"Where are you right now, and what direction are you facing?",Q_i
+43,"Navigate to the corridor at your maximum speed, then rotate in place for 180 degrees.","G_n,W_c"
+44,Send an image of your surroundings and list any humans or chairs you detect.,"Q_i,O_n"
+45,"Go to coordinates x:2, y:2, z:0. While there, turn 90 degrees left and move 1.5 m forward at 0.8 m/s. Then describe what you see, and tell me your orientation and coordinates. Finally, among the named destinations, go where I can cook food.","G_n,W_c,Q_i,O_n,C_r"
+46,"Move forward 3 meters at 0.25 m/s, rotate 360 degrees with radius 1 meter, then stop.",W_c
+47,"What is your yaw angle right now, and how many objects can you see?",Q_i
+48,Head to the workshop and describe what you can see there.,"G_n,Q_i"
+49,"Rotate 180 degrees at speed 30 deg/s, then move backward 2 meters at 0.3 m/s.",W_c
+50,"Stop all motion after moving right for 2m, then send me details about your current location and any visible obstacles.","W_c,Q_i"
+51,"Please navigate to x:0, y:0, z:0 at a speed of 0.4 m/s, then rotate 90 degrees to the right.","G_n,W_c"
+52,"Among your possible destinations, pick the one related to answering inquiries about administrative tasks and move there now.","G_n,C_r"
+53,"Move forward 2 meters at 0.2 m/s, then rotate to face the recently detected 'person', and approach it by 1 meter.","W_c,O_n"
+54,Tell me about yourself in Chinese. Which company built you and what can you do?,Q_i
+55,"Move to coordinate x:3, y:-4, z:0, wait for 10s, and then turn left. Report what you can see within your view. Finally, head to the location where I can enjoy meals and refreshments.","G_n,W_c,Q_i,C_r"
+56,There is network connection problem around here. Could you take me to where I can maintain the server equipment,C_r
+57,"Go to coordinates (2,2,0), turn left 90°, walk forward 1.5 meters at 0.8 m/s. After that, please share your location, orientation, and describe any surroundings you observe.","G_n,W_c,Q_i"
+58,Where can I get information about you?,Q_i
+59,Send me a photo of what you can see around you,Q_i
+60,"Move in a rectangular pattern of length 4m and breath 2.5m. Pause for 10s after completion, then return to the location x = 0, y=0, and z = 0.","W_c, G_n"
+61,"Go to the location (0,0,0)",G_n
+62,Move forward 5 meters at a speed of 0.8 m/s.,W_c
+63,"Go to the locations with coordinates (2,2,0) and (0,6,0). Stay in the locations for 10 seconds each. When finished, return to the starting position. I assume that you started at (0,0,0)","G_n, W_c"
+64,Move backwards at a speed of 100 centimeters per second until you reach a distance of 3000 millimeters.,W_c
+65,"Turn left and travel 0.04km with your maximum speed.  When finished, return to the location x:0,y:0,z:0.","W_c, G_n"
+66,"Among the destinations you can navigate to, take me to where I can cook food","G_n,C_r"
+67,"Move diagonally at one meter per second for 3.5 meters, thereafter make a circular movement with a radius of 1.5 meters at your minimum speed.",W_c
+68,Rotate 360 degrees and move in a rectangular pattern of length 9.8ft and breadth 59 inches,W_c
+69,"Turn left 45 degrees and proceed straight for 5 meters. Pause for 10 seconds, half of the distance",W_c
+70,"Could you please tell me your orientation? Also, tell me what direction are you facing?",Q_i
+71,"Among you known destinations, take me to where I can attend meetings, presentations, or conferences","C_r, G_n"
+72,"Now it is my break time and I want to enjoy nature . Among your known destinations, could you take me to where I can do that, and then come back to your charge station (0,0,0)","C_r, G_n"
+73,Is there a place among your known destinations that one can attend to personal hygiene?,C_r
+74,"Advance one and half meters, then rotate 90 degrees left.",W_c
+75,There are smokes coming from the kitchen. Could you go there and tell me what you can see. Do not forget to send me photo of the surrounding immediately you get there,"G_n,Q_i"
+76,"Go to x:2, y:-1, z:0 at 0.5 m/s, then rotate 90 degrees to the left and move forward 1 meter.","G_n,W_c"
+77,"Advance 2 meters at 0.3 m/s, rotate 45° to the right, and then reverse for 1 meter.",W_c
+78,"Where are you right now, and what is your orientation?",Q_i
+79,Navigate to the newly detected sofa in the living area.,O_n
+80,Head to the secretary's office without exceeding 0.4 m/s.,G_n
+81,"Rotate 180 degrees at radius 2 meters and speed 0.25 m/s, then stop all movement.",W_c
+82,Can you tell me which objects are directly in front of you now?,Q_i
+83,"Drive forward 1 meter, then rotate to face the lamp you just detected.","W_c,O_n"
+84,"Stop everything you are doing right now, and head to Prof.'s office.",W_c
+85,Kindly capture an image of your current environment and send it over.,Q_i
+86,"Among your known destinations, take me to the place where I can work on metal cutting task","G_n,C_r"
+87,"Move forward 3 meters at speed 0.2 m/s, then turn left 90 degrees.",W_c
+88,"Go to the location (-1,3,0) at max speed, then describe everything you detect there.","G_n,Q_i"
+89,"Which direction are you facing, and what is your yaw angle in degrees?",Q_i
+90,Please turn right and move 2 meters at 0.3 m/s,W_c
+91,What is your maximum movement speed?,Q_i
+92,"Send me a live image, then list any potential obstacles you detect.",Q_i
+93,"Reverse for four meters at 0.5 m/s, then rotate 180°.",W_c
+94,"Rotate to face the newly detected chair, then move forward 1 meter at 0.2 m/s.","O_n,W_c"
+95,Describe any humans in your field of view right now.,Q_i
+96,"Travel ahead for 2 meters, turn 90° using a 1-meter radius arc, then continue forward 2 more meters.",W_c
+97,"Navigate to (5, -2, 0); upon detecting any person present, halt right in front of them.","G_n,O_n,C_r"
+98,Please list your currently available abilities or tasks you can carry out.,Q_i
+99,"Please hurry to the kitchen; once you've arrived, provide a description of what you see.","G_n,Q_i"
+100,"Go forward 1 meter, then reverse for 1 meter, and finally rotate left 90° at a rate of 20 deg/s.",W_c
+101,"Proceed to (1,4,0) at 0.3 m/s, execute a 180° rotation, and report your visual observations.","G_n,W_c,Q_i"
+102,Could you rotate to face the lamp in the corner and then approach it by 1.5 meters?,"O_n,W_c"
+103,"Could you provide your current position and orientation, please?",Q_i
+104,"Stop all actions, then turn right 45 degrees and move 2 meters at 0.2 m/s.",W_c
+105,"Among your known destinations, take me to where I can wash my hands.","G_n,C_r"
+106,"Drive in a 180° arc with a 3-meter radius at 0.25 m/s, then come to a complete stop.",W_c
+107,"Move forward 2 meters at 0.4 m/s, turn right 90 degrees, then describe any objects you detect.","W_c,O_n,Q_i"
+108,"Head to (-3, 2, 0). Turn left 90° there, then move forward 1.5 m at 0.2 m/s.","G_n,W_c"
+109,Kindly provide a snapshot of what is currently in front of you.,Q_i
+110,"If you see a 'trash bin', navigate to it and stop 0.5 meters away.","O_n,C_r"
+111,Circle around a 1-meter radius for a full 360° at 1 m/s.,W_c
+112,Please share your location and your heading direction at this moment.,Q_i
+113,"Go to the corridor at top speed, then turn around 180° on the spot.","G_n,W_c"
+114,"Please capture and send a photo of the area, and note if you see any people or chairs.","Q_i,O_n"
+115,"Travel to (2,2,0), rotate left 90°, advance 1.5 m at 0.8 m/s, then explain your surroundings, orientation, and location. Lastly, proceed to the place designated for cooking.","G_n,W_c,Q_i,O_n,C_r"
+116,"Advance 3 meters at 0.25 m/s, make a full 360° rotation around a 1-meter radius, and then halt.",W_c
+117,Please state your current yaw angle and the count of objects in your vision.,Q_i
+118,Head to the newly detected storage box in the workshop and stop right in front of it.,"G_n,O_n"
+119,"Spin around 180° at 30 deg/s, then reverse 2 meters at 0.3 m/s.",W_c
+120,"Stop all motion, then send me details about your current location and any visible obstacles.",Q_i
+121,"Go to (0,0,0) at 0.4 m/s, then execute a 90° right turn.","G_n,W_c"
+122,"Among your possible destinations, pick the one related to answering inquiries and move there now.","G_n,C_r"
+123,"Move forward 2 meters at 0.2 m/s, then rotate to face the recently detected 'plant', and approach it by 1 meter.","W_c,O_n"
+124,Send me your current coordinates.,Q_i
+125,"Perform a 270-degree rotation. Then, move in a V-shape of lengths 200cm each",W_c
+126,"Step back by half a meter. Take a snapshot of what's ahead, and describe what you can see.","W_c, Q_i"
+127,"Describe what can you detect with your field of view. Then, walk towards any of the detected object and stop 1 meter before it.","Q_i,O_n"
+128,Head to the corridor. Rotate to face south which is 90 degrees to the left.,O_n
+129,"Assuming your start position is (0,0,0). Go to the locations with coordinates (2,2,0) and (0,6,0). Stay in each location for 10 seconds. When finished, return to the starting position.",G_n
+130,"I want you to move backwards at 100 centimetres per second until you reach a distance of 3000 millimetres. When you reach there, send me a photo of what you can see in front of you.","W_c, Q_i"
